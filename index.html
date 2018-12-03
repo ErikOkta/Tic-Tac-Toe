@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="tic-tac-toe" class="span12">
+      <div class="row">
+        <h1 class="span12">Tic Tac Toe</h1>
+      </div>
+
+
+      <div class="row">
+        <h4 class="span12 text-center">Size</h4>
+      </div>
+
+      <div class="row">
+        <div class="span12" align="center">
+          <div id="size-cover">
+            <button class="btn inline btn-danger btn-min">-</button>
+            <input type='text' class="inline" id='size' data-current-size="3" value="3">
+            <button class="btn inline btn-success btn-add">+</button>
+          </div>
+          <button class="btn inline btn-primary btn-update disabled">Update</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="span12" align="center">
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12" align="center">
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" >
+        <div id="game" class="span12" align="center">
+          <ul>
+            <li id="one" class="btn span1" >+</li>
+            <li id="two" class="btn span1">+</li>
+            <li id="three" class="btn span1">+</li></ul><ul>
+            <li id="four" class="btn span1">+</li>
+            <li id="five" class="btn span1">+</li>
+            <li id="six" class="btn span1">+</li></ul><ul>
+            <li id="seven" class="btn span1">+</li>
+            <li id="eight" class="btn span1">+</li>
+            <li id="nine" class="btn span1">+</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr">&nbsp;</div>
+      <div class="row"><div class="span12 text-center" align="center"><a href="#" id="reset" class="btn-success btn" >Restart</a></div></div></div>  
+</div>
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
